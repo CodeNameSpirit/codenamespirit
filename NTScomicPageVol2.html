@@ -68,6 +68,18 @@ content=width=device-width, initial-scale=1.0">
   grid-column-start:3;
   grid-column-end:3;
 }    
+#grid{
+ display: grid;
+ grid-temlplate-columns: auto auto auto;
+ grid-temlplate-rows: auto auto auto;
+ height: 90vh;
+}
+#grid > div {
+border: 1px 
+text-align: center;
+}
+
+
 
 </style>
 
@@ -321,11 +333,38 @@ position:  relitive;
 
 
 }
+ .BB2{   
+  zoom:25%;
+  margin:auto;
+  grid-column:1;
+  grid-row:29;
+  justify-self:left;
+  grid-column-start:1;
+  grid-column-end:1;
+}
+.HB2{
+  zoom:25%;
+  margin:auto;
+  grid-column:2;
+  grid-row:29;
+  justify-self:right;
+  grid-column-start:2;
+  grid-column-end:2;
+}    
+  .NB2{
+  zoom:25%;
+  margin:auto;
+  grid-column:3;
+  grid-row:29;
+  justify-self:right;
+  grid-column-start:3;
+  grid-column-end:3;
+}    
     .giscus{
  position:  relitive;
   margin: auto;
   grid-column: 1 / span 3;
-  grid-row: 29;
+  grid-row: 30;
   text-align: center;
 
     
@@ -365,6 +404,9 @@ text-align: center;
 
 
 
+<div class="BB2"><a href="NTScomicPageVol1.html"><img src="Assets/BackButton.png" alt="BB" style="width:100;height:100;"></a></div>
+    <div class="HB2"><a href="index.html"><img src="Assets/HomeButton.png" alt="HB" style="width:100;height:100;"></a></div>
+    <div class="NB2"><a href="NTScomicPageVol2.html"><img src="Assets/NextButton.png" alt="NB"style="width:200;height:200;"></a></div>
 
   <div class="giscus"></div>
 </div>
