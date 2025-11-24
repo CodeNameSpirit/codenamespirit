@@ -17,11 +17,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* GRID LAYOUT */
 #grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+  grid-template-columns: 1fr 1fr 1fr; 
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -29,7 +27,7 @@ body {
   padding: 20px;
 }
 
-/* BANNER — centered across all columns */
+
 .NTS-banner {
   grid-column: 1 / span 3;
   text-align: center;
@@ -39,7 +37,7 @@ body {
   max-width: 900px;
 }
 
-/* HOME BUTTON — centered in middle column */
+
 .HB {
   grid-column: 2;
   text-align: center;
@@ -47,8 +45,7 @@ body {
 .HB img {
   width: 150px;
 }
-
-/* NEXT BUTTON — sits to the RIGHT of the Home button */
+ 
 .NB {
   grid-column: 3;
   text-align: center;
@@ -57,7 +54,7 @@ body {
   width: 150px;
 }
 
-/* EACH PAGE IMAGE — centered and same width */
+
 .page img {
   width: 90%;
   max-width: 900px;
@@ -65,10 +62,10 @@ body {
   margin: auto;
 }
 
-/* MOBILE FIXES */
+
 @media (max-width: 900px) {
   #grid {
-    grid-template-columns: 1fr; /* everything stacks */
+    grid-template-columns: 1fr; 
   }
 
   .NTS-banner { grid-column: 1; }
@@ -88,26 +85,24 @@ body {
 
 <div id="grid">
 
-  <!-- BANNER -->
+
   <div class="NTS-banner">
     <img src="Assets/Successful-failures_Banner.png">
   </div>
 
-  <!-- HOME BUTTON -->
+  
   <div class="HB">
     <a href="index.html">
       <img src="Assets/HomeButton.png" alt="Home Button">
     </a>
-  </div>
-
-  <!-- NEXT BUTTON -->
+    
   <div class="NB">
     <a href="NTScomicPageVol2.html">
       <img src="Assets/NextButton.png" alt="Next Button">
     </a>
   </div>
 
-  <!-- COMIC PAGES — ALL CENTERED -->
+  
   <div class="page"><img src="SFvol1/Pg1.png"></div>
   <div class="page"><img src="SFvol1/Pg2.png"></div>
   <div class="page"><img src="SFvol1/Pg3.png"></div>
@@ -142,3 +137,4 @@ body {
 
 </body>
 </html>
+
