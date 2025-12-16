@@ -1,423 +1,146 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    
-      <script src="https://giscus.app/client.js"
-        data-repo="CodeNameSpirit/CodeNameSpirit"
-        data-repo-id="R_kgDON8dGVg"
-        data-category="Announcements"
-        data-category-id="DIC_kwDON8dGVs4CnIN8"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="dark"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-      </script>
-<meta name="viewport"
-content=width=device-width, initial-scale=1.0">
-  <style>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NTS Comic Vol 2</title>
+
+<!-- Giscus -->
+<script src="https://giscus.app/client.js"
+  data-repo="CodeNameSpirit/CodeNameSpirit"
+  data-repo-id="R_kgDON8dGVg"
+  data-category="Announcements"
+  data-category-id="DIC_kwDON8dGVs4CnIN8"
+  data-mapping="pathname"
+  data-theme="dark"
+  crossorigin="anonymous"
+  async>
+</script>
+
+<style>
 * {
-   margin: 0;
-   box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
- body{
+
+body{
   font-family:"Licida Sana", sans-serif;
   background-image: url('Assets/NTS_BACKGROUND .png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
  }
+
+/* GRID */
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 20px;
+}
+
+/* BANNER */
 .NTS-banner {
-  position: relative;
   grid-column: 1 / span 3;
-  grid-row: 1;
   text-align: center;
-  margin: 20px auto;
 }
 
 .NTS-banner img {
-  display: block;
-  margin: 0 auto;
   max-width: 100%;
   height: auto;
 }
 
-
-
-#grid{
- display: grid;
- grid-temlplate-columns: auto auto auto;
- grid-temlplate-rows: auto auto auto;
- height: 90vh;
-}
-#grid > div {
-border: 1px 
-text-align: center;
+/* COMIC PAGES */
+.page {
+  grid-column: 1 / span 3;
+  text-align: center;
 }
 
+.page img {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+}
 
+/* NAV BUTTONS */
+.nav {
+  zoom: 25%;
+  margin: auto;
+}
 
+.top-nav {
+  grid-row: 2;
+}
+
+.bottom-nav {
+  grid-row: auto;
+}
+
+.BB { grid-column: 1; }
+.HB { grid-column: 2; }
+.NB { grid-column: 3; }
+
+/* GISCUS */
+.giscus {
+  grid-column: 1 / span 3;
+  margin-top: 50px;
+}
 </style>
+</head>
 
-
-<div id="grid"><
-  <div class="box"></div>
-  <div class="NTS-banner"><img src="Assets/Successful-failures_Banner.png"></div></div>
-     ></div>
- </head>
-<style>
-.pg1 {
- position:  relitive;
-  margin: auto;
-  grid-column: 2;
-  grid-row: 4;
-  text-align: center;
-
-
-}
-.pg2 {
-  position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 5;
-  text-align: center;
-
-
-}
-.pg3 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 6;
-  text-align: center;
-
-
-}
-.pg4 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 7;
-  text-align: center;
-
-
-}
-.pg5 {
-position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 8;
-  text-align: center;
-
-}
-.pg6 {
-position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 9;
-  text-align: center;
-
-}
-.pg7 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 10;
-  text-align: center;
-
-
-}
-.pg8 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 11;
-  text-align: center;
-
-
-
-}
-.pg9 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 12;
-  text-align: center;
-
-
-}
-.pg10 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 13;
-  text-align: center;
-
- 
-}
-.pg11 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 14;
-  text-align: center;
-
-
-}
-.pg12 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 16;
-  text-align: center;
-
-
-}
-.pg13 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 17;
-  text-align: center;
-
- 
-}
-.pg14 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 18;
-  text-align: center;
-
-
-}
-.pg15 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 19;
-  text-align: center;
-
-
-}
-.pg16 {
-position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 20;
-  text-align: center;
-
-}
-.pg17 {
-position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 21;
-  text-align: center;
-
-}
-.pg18 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 22;
-  text-align: center;
-
-
-}
-.pg19 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 23;
-  text-align: center;
-
-
-}
-.pg20 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 24;
-  text-align: center;
-
-
-}
-.pg21 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 25;
-  text-align: center;
-
-
-}
-.pg22 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 26;
-  text-align: center;
-
-
-}
-.pg23 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 27;
-  text-align: center;
-
-
-}
-.pg24 {
-position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 28;
-  text-align: center;
-
-}
-.pg25 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 29;
-  text-align: center;
-
-
-}
-.pg26 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 30;
-  text-align: center;
-
-
-}
-.pg27 {
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 31;
-  text-align: center;
-
-
-
-}
- .BB2{   
-  zoom:25%;
-  margin:auto;
-  grid-column:1;
-  grid-row:32;
-  justify-self:left;
-  grid-column-start:1;
-  grid-column-end:1;
-}
-.HB2{
-  zoom:25%;
-  margin:auto;
-  grid-column:2;
-  grid-row:32;
-  justify-self:right;
-  grid-column-start:2;
-  grid-column-end:2;
-}    
-  .NB2{
-  zoom:25%;
-  margin:auto;
-  grid-column:3;
-  grid-row:32;
-  justify-self:right;
-  grid-column-start:3;
-  grid-column-end:3;
-}    
-    .giscus{
- position:  relitive;
-  margin: auto;
-  grid-column: 1 / span 3;
-  grid-row: 33;
-  text-align: center;
-
-    
-    }
-  .BB{
-  zoom:25%;
-  margin:auto;
-  grid-column:1;
-  grid-row:2;
-  justify-self:left;
-  grid-column-start:1;
-  grid-column-end:1;
-}
-.HB{
-  zoom:25%;
-  margin:auto;
-  grid-column:2;
-  grid-row:2;
-  justify-self:right;
-  grid-column-start:2;
-  grid-column-end:2;
-}    
-  .NB{
-  zoom:25%;
-  margin:auto;
-  grid-column:3;
-  grid-row:2;
-  justify-self:right;
-  grid-column-start:3;
-  grid-column-end:3;
-}    
-#grid{
- display: grid;
- grid-temlplate-columns: auto auto auto;
- grid-temlplate-rows: auto auto auto;
- height: 90vh;
-}
-#grid > div {
-border: 1px 
-text-align: center;
-}
-
-
-</style>
-
+<body>
 
 <div id="grid">
-  <div class="pg1"><img src="SFvol2\Pg1v2.png" alt="pg1v2"width="900" heihgt="900" ></div>
- <div class="pg2"><img src="SFvol2\Pg2v2.png" alt="pg2v2" width="900" heihgt="900"></div>
-<div class="pg3"><img src="SFvol2\Pg3v2.png" alt="pg3v2" width="900" heihgt="900"></div>
-<div class="pg4"><img src="SFvol2/Screenshot_20250218_202116_YouTube.jpg" alt="pg4v2" width="500" heihgt="500"></div>
-<div class="pg5"><img src="SFvol2\Pg5v2.png" alt="pg5v2" width="900" heihgt="900"></div>
-<div class="pg6"><img src="SFvol2\Pg6v2.png" alt="pg6v2" width="900" heihgt="900"></div>
-<div class="pg7"><img src="SFvol2\Pg7v2.png" alt="pg7v2" width="900" heihgt="900"></div>
-<div class="pg8"><img src="SFvol2\Pg8v2.png" alt="pg8v2" width="900" heihgt="900"></div>
-<div class="pg9"><img src="SFvol2\Pg9v2.png" alt="pg9v2" width="900" heihgt="900"></div>
-<div class="pg10"><img src="SFvol2\pg10v2.png" alt="pg10v2" width="900" heihgt="900"></div>
-<div class="pg11"><img src="SFvol2\pg11v2.png" alt="pg11v2" width="900" heihgt="900"></div>
-<div class="pg12"><img src="SFvol2\pg12v2.png" alt="pg12v2" width="900" heihgt="900"></div>
-<div class="pg13"><img src="SFvol2\v2pg13.png" alt="v2pg13" width="900" heihgt="900"></div>
-<div class="pg14"><img src="SFvol2\v2pg14.png" alt="v2pg14" width="900" heihgt="900"></div>
 
+  <!-- Banner -->
+  <div class="NTS-banner">
+    <img src="Assets/Successful-failures_Banner.png">
+  </div>
 
+  <!-- Top Navigation -->
+  <div class="nav BB top-nav">
+    <a href="NTScomicPageVol1.html"><img src="Assets/BackButton.png"></a>
+  </div>
+  <div class="nav HB top-nav">
+    <a href="index.html"><img src="Assets/HomeButton.png"></a>
+  </div>
+  <div class="nav NB top-nav">
+    <a href="NTScomicPageVol2.html"><img src="Assets/NextButton.png"></a>
+  </div>
 
+  <!-- Comic Pages -->
+  <div class="page"><img src="SFvol2/Pg1v2.png"></div>
+  <div class="page"><img src="SFvol2/Pg2v2.png"></div>
+  <div class="page"><img src="SFvol2/Pg3v2.png"></div>
+  <div class="page"><img src="SFvol2/Pg5v2.png"></div>
+  <div class="page"><img src="SFvol2/Pg6v2.png"></div>
+  <div class="page"><img src="SFvol2/Pg7v2.png"></div>
+  <div class="page"><img src="SFvol2/Pg8v2.png"></div>
+  <div class="page"><img src="SFvol2/Pg9v2.png"></div>
+  <div class="page"><img src="SFvol2/Pg10v2.png"></div>
+  <div class="page"><img src="SFvol2\Pg11v2.png"></div>
+  <div class="page"><img src="SFvol2\pg12v2.png"></div>
+  <div class="page"><img src="SFvol2\v2pg13.png"></div>
+  <div class="page"><img src="SFvol2\v2pg14.png"></div>
+  <!-- Bottom Navigation -->
+  <div class="nav BB bottom-nav">
+    <a href="NTScomicPageVol1.html"><img src="Assets/BackButton.png"></a>
+  </div>
+  <div class="nav HB bottom-nav">
+    <a href="index.html"><img src="Assets/HomeButton.png"></a>
+  </div>
+  <div class="nav NB bottom-nav">
+    <a href="NTScomicPageVol2.html"><img src="Assets/NextButton.png"></a>
+  </div>
 
-
-<div class="BB"><a href="NTScomicPageVol1.html"><img src="Assets/BackButton.png" alt="BB" style="width:100;height:100;"></a></div>
-    <div class="HB"><a href="index.html"><img src="Assets/HomeButton.png" alt="HB" style="width:100;height:100;"></a></div>
-    <div class="NB"><a href="NTScomicPageVol2.html"><img src="Assets/NextButton.png" alt="NB"style="width:200;height:200;"></a></div>
-
-<div class="BB2"><a href="NTScomicPageVol1.html"><img src="Assets/BackButton.png" alt="BB" style="width:100;height:100;"></a></div>
-    <div class="HB2"><a href="index.html"><img src="Assets/HomeButton.png" alt="HB" style="width:100;height:100;"></a></div>
-    <div class="NB2"><a href="NTScomicPageVol2.html"><img src="Assets/NextButton.png" alt="NB"style="width:200;height:200;"></a></div>
-
+  <!-- Comments -->
   <div class="giscus"></div>
+
 </div>
+
+</body>
 </html>
+
 
 
