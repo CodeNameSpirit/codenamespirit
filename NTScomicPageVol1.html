@@ -23,86 +23,120 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  gap: 20px;
-  padding: 20px;
+  gap: 20px;<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NTS Comic Vol 1</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Lucida Sans", sans-serif;
+  background: url("Assets/NTS_BACKGROUND.png") no-repeat fixed center / cover;
+}
 
+/* GRID */
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* BANNER */
 .NTS-banner {
   grid-column: 1 / span 3;
   text-align: center;
 }
+
 .NTS-banner img {
-  width: 80%;
   max-width: 900px;
+  width: 100%;
 }
 
-
-.HB {
-  grid-column: 2;
+/* COMIC PAGES */
+.page {
+  grid-column: 1 / span 3;
   text-align: center;
 }
-.HB img {
-  width: 150px;
-}
- 
-.NB {
-  grid-column: 3;
-  text-align: center;
-}
-.NB img {
-  width: 150px;
-}
-
 
 .page img {
-  width: 90%;
   max-width: 900px;
+  width: 100%;
+  height: auto;
   display: block;
   margin: auto;
 }
 
+/* NAV BUTTONS */
+.nav {
+  zoom: 25%;
+  margin: auto;
+}
 
+.BB { grid-column: 1; }
+.HB { grid-column: 2; }
+.NB { grid-column: 3; }
+
+/* GISCUS */
+.giscus {
+  grid-column: 1 / span 3;
+  margin-top: 60px;
+}
+
+/* MOBILE */
 @media (max-width: 900px) {
   #grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 
-  .NTS-banner { grid-column: 1; }
-  .HB { grid-column: 1; }
-  .NB { grid-column: 1; }
+  .NTS-banner,
+  .page,
+  .giscus {
+    grid-column: 1;
+  }
 
-  .HB img, .NB img {
-    width: 120px;
+  .BB, .HB, .NB {
+    grid-column: 1;
+    justify-self: center;
   }
 }
 </style>
 </head>
 
-
-
 <body>
 
 <div id="grid">
 
-
+  <!-- Banner -->
   <div class="NTS-banner">
-    <img src="Assets/Successful-failures_Banner.png">
+    <img src="Assets/Successful-failures_Banner.png" alt="Banner">
   </div>
 
-  
-  <div class="HB">
+  <!-- Top Navigation -->
+  <div class="nav BB">
     <a href="index.html">
-      <img src="Assets/HomeButton.png" alt="Home Button">
-    </a>
-    
-  <div class="NB">
-    <a href="NTScomicPageVol2.html">
-      <img src="Assets/NextButton.png" alt="Next Button">
+      <img src="Assets/HomeButton.png" alt="Home">
     </a>
   </div>
 
-  
+  <div class="nav NB">
+    <a href="NTScomicPageVol2.html">
+      <img src="Assets/NextButton.png" alt="Next">
+    </a>
+  </div>
+
+  <!-- Comic Pages -->
   <div class="page"><img src="SFvol1/Pg1.png"></div>
   <div class="page"><img src="SFvol1/Pg2.png"></div>
   <div class="page"><img src="SFvol1/Pg3.png"></div>
@@ -131,10 +165,27 @@ body {
   <div class="page"><img src="SFvol1/Pg26.png"></div>
   <div class="page"><img src="SFvol1/Pg27.png"></div>
 
+  <!-- Bottom Navigation -->
+  <div class="nav BB">
+    <a href="index.html">
+      <img src="Assets/HomeButton.png" alt="Home">
+    </a>
+  </div>
+
+  <div class="nav NB">
+    <a href="NTScomicPageVol2.html">
+      <img src="Assets/NextButton.png" alt="Next">
+    </a>
+  </div>
+
+  <!-- Comments -->
   <div class="giscus"></div>
 
 </div>
 
 </body>
 </html>
+
+
+
 
