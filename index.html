@@ -1,147 +1,214 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<meta name="viewport"
-content=width=device-width, initial-scale=1.0">
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CodeName Spirit</title>
+
+<style>
 * {
-   margin: 0;
-   box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
- body{
+
+body{
   font-family:"Licida Sana", sans-serif;
   background-image: url('Assets/Space_Background .png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+/* GRID */
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 20px;
+}
 
-  .CS-banner{
-  position: relitive;
-  margin: 30px;
-  zoom: 60%;
-  top: 20px;
-  grid-column: 2;
-  grid-row: 1;
+/* BANNER */
+.CS-banner {
+  grid-column: 2 / span 2;
   text-align: center;
 }
-.spirit{
-  position: reletive;
-  top: 20px;
-  zoom: 30%;
+
+.CS-banner img {
+  width: 60%;
+}
+
+/* SPIRIT */
+.spirit {
   grid-column: 4;
-  grid-row: 1;
   text-align: center;
 }
-.udtSced{
- position: reletive;
-  top: 180px;
-  font-size: 3em;
-  right: 25%;
+
+.spirit img {
+  width: 30%;
+}
+
+/* UPDATE TEXT */
+.udtSced {
+  grid-column: 1 / span 4;
+  text-align: center;
+  font-size: 2.5em;
   color: yellow;
+}
+
+/* COMICS SECTION */
+.ComicsSection {
   grid-column: 1 / span 4;
-  grid-row: 2;
   text-align: center;
-
 }
 
-.ComicsSection{
-  position: reletive;
-  zoom: 20%;
-  margin: auto;
-  top: 60%;
-  grid-column: 1 / span 4;
-  grid-row: 4;
- }
-.COVone{
-  top: 1600px;
-  zoom: 40%;
-  margin: auto;
-  grid-column: 1;
-  grid-row: 5;
-  background-color: forestgreen;
+.ComicsSection img {
+  width: 20%;
+}
+
+/* COVERS */
+.COVone,
+.COVtwo {
+  grid-row: auto;
   text-align: center;
- }
-.CovOneTxT{
-font-size:2em;
-font-color: black;
+  background: rgba(0, 128, 0, 10);
+  padding: 20px;
 }
-.COVtwo{
-  top: 1600px;
-  zoom: 40%;
-  margin: auto;
-  grid-column: 2;
-  grid-row: 5;
-  background-color: green;
+
+.COVone {
+  grid-column: 1 / span 2;
+}
+
+.COVtwo {
+  grid-column: 3 / span 2;
+}
+
+.COVone img,
+.COVtwo img {
+  width: 40%;
+}
+
+/* COUNTER */
+.Counter {
+  grid-column: 2 / span 2;
+  grid-row:2;
   text-align: center;
-
- }
-
-.CovTwoTxT{
-font-size:2em;
-font-color: black;
 }
 
-#grid{
- display: grid;
- grid-temlplate-columns: auto auto auto;
- grid-temlplate-rows: auto auto auto;
- height: 90vh;
-}
-#grid > div {
-border: 1px 
-text-align: center;
-}
-.YT{
-  zoom:25%;
-  margin:auto;
-  grid-column:1;
-  grid-row:3;
-  justify-self:left;
-  grid-column-start:1;
-  grid-column-end:1;
-}
-.Cara{
-  zoom:25%;
-  margin:auto;
-  grid-column:2;
-  grid-row:3;
-  justify-self:right;
-  grid-column-start:2;
-  grid-column-end:2;
-}    
-.Counter{
-  margin:auto;
-  grid-column:2;
-  grid-row:6;
-}    
-
+/* SOCIALS */
+.YT,
+.Cara {
+  text-align: center;
+  color: white;
   
 }
+
+   
+  /* Smooth transition */
+.YT img,
+.Cara img {
+  
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Swap image on hover */
+.YT a:hover img {
+    content: url("Assets/portal.gif");
+   Width: 170px;
+}
+
+.Cara a:hover img {
+  content: url("Assets/portal.gif");
+  width: 170px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </style>
 </head>
 
 <body>
-<div id="grid"><
-  <div class="box"></div>
-  <div class= "Counter"><!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=20399349&style=0044&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a></div>
- <div class="CS-banner"><img src=Assets/CodeNameSpirit_banner.png></div>
- <div class="spirit"><img src="Assets/Spirit.gif" alt="spirit"></div>
- <div class="udtSced center"><h>comic up dates every 2 weeks on friday</h><p> last update-----April, 25 </p></div>
- <div class="box2"></div>
-  <div class="ComicsSection center"><img src="Assets/BoxHeadComics.png"></div>
-  <div class="COVone center"><p  width="500" style="font-size:2.5em">NTS Successful failures volume#1 </p><p><a href="NTScomicPageVol1.html"><img src="Assets/SFvolOneCov.png" alt="COVone" width="500" heihgt="500"><div class="CovOneTxT"><p style="color=black">Finished---------Series status: Ongoing</p><p2 style="font-size:1.5em">Description:</p2>
-<p>Boxhead and his friends try to sign up</p><p2>for the renound NTS Academy</p2></div></div>
 
-  <div class="COVtwo center"><p  width="500" style="font-size:2.5em">NTS Successful failures volume#2 </p><p><a href="NTScomicPageVol2.html"><img src="Assets/SFvolTWOcov.png" alt="COVone" width="500" heihgt="500"><div class="CovTwoTxT"><p style="color=black">Ongoing---------Series status: Ongoing</p><p2 style="font-size:1.5em">Description:</p2>
-<p>Boxhead,Nate, and Kai head to</p><p2>Obelisk town with Penny and Scrlett</p2></div></div>
+<div id="grid">
 
-<div class="YT"><p style="font-size:7em">YouTube</p><p><a href="https://www.youtube.com/@codenamespirit7772"><img src=Assets/Youtube.gif alt="YT"></div>
-<div class="Cara"><p style="font-size:7em">Cara</p><p><a href="https://cara.app/codenamespirit/"><img src=Assets/Cara.gif alt="YT"></div>
-</div> 
+  <!-- Counter -->
+  <div class="Counter">
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=20399349&style=0044&nbdigits=5&type=ip&initCount=0" alt="Counter">
+    </a>
+  </div>
+
+  <!-- Banner -->
+  <div class="CS-banner">
+    <img src="Assets/CodeNameSpirit_banner.png" alt="CodeName Spirit">
+  </div>
+
+  <!-- Spirit -->
+  <div class="spirit">
+    <img src="Assets/Spirit.gif" alt="Spirit">
+  </div>
+
+  <!-- Update -->
+  <div class="udtSced">
+    <h2>keep an eye out on my socials for comic updates!!!</h2>
+    <p>Last update — April 25</p>
+  </div>
+
+  <!-- Comics Section -->
+  <div class="ComicsSection">
+    <img src="Assets/BoxHeadComics.png" alt="Comics">
+  </div>
+
+  <!-- Volume 1 -->
+  <div class="COVone">
+    <h3>NTS Successful Failures — Volume 1</h3>
+    <a href="NTScomicPageVol1.html">
+      <img src="Assets/SFvolOneCov.png" alt="Volume 1">
+    </a>
+    <p><strong>Finished</strong> — Series status: Ongoing</p>
+    <p>Description:</p>
+    <p>Boxhead and his friends try to sign up for the renowned NTS Academy</p>
+  </div>
+
+  <!-- Volume 2 -->
+  <div class="COVtwo">
+    <h3>NTS Successful Failures — Volume 2</h3>
+    <a href="NTScomicPageVol2.html">
+      <img src="Assets/SFvolTWOcov.png" alt="Volume 2">
+    </a>
+    <p><strong>Ongoing</strong> — Series status: Ongoing</p>
+    <p>Description:</p>
+    <p>Boxhead, Nate, and Kai head to Obelisk Town with Penny and Scarlett</p>
+  </div>
+
+  <!-- Socials -->
+  <div class="YT">
+    <h2>YouTube</h2>
+    <a href="https://www.youtube.com/@codenamespirit7772">
+      <img src="Assets/Youtube.gif" alt="YouTube" width="80">
+    </a>
+  </div>
+
+  <div class="Cara">
+    <h2>Cara</h2>
+    <a href="https://cara.app/codenamespirit/">
+      <img src="Assets/Cara.gif" alt="Cara" width="80">
+    </a>
+  </div>
+
+</div>
+
 </body>
 </html>
+
+
