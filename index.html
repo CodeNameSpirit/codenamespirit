@@ -79,12 +79,12 @@ body{
 }
 
 .COVtwo {
-  grid-column: 3 / span 2;
+  grid-column: 1 / span 2;
 }
 
 .COVone img,
 .COVtwo img {
-  width: 40%;
+  width: 60%;
 }
 
 /* COUNTER */
@@ -96,16 +96,32 @@ body{
 
 /* SOCIALS */
 .YT,
-.Cara {
+.Cara,
+.WebProfLink {
   text-align: center;
   color: white;
-  
+  text-align: center;
+  margin-top: 30px;
+
+.YT {
+  grid-column: 2;
+ 
+}
+
+.Cara {
+  grid-column: 3;
+}
+.WebProfLink{
+ grid-column: 4
+}
+
 }
 
    
   /* Smooth transition */
 .YT img,
-.Cara img {
+.Cara img 
+.WebProfLink img{
   
   transition: opacity 0.2s ease-in-out;
 }
@@ -121,7 +137,41 @@ body{
   width: 170px;
 }
 
+.WebProfLink a:hover img {
+  content: url("Assets/portal.gif");
+  width: 170px;
+}
 
+ /* --- GALLERY --- */
+    .gallery-title {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+   .GallerySection {
+  grid-column: 1 / span 1;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+
+
+    .gallery img {
+      
+      object-fit: cover;
+            cursor: pointer;
+      transition: 0.2s;aa
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      opacity: 0.85;
+    }
 
 
 
@@ -163,35 +213,7 @@ body{
     <h2>keep an eye out on my socials for comic updates!!!</h2>
     <p>Last update — April 25</p>
   </div>
-
-  <!-- Comics Section -->
-  <div class="ComicsSection">
-    <img src="Assets/BoxHeadComics.png" alt="Comics">
-  </div>
-
-  <!-- Volume 1 -->
-  <div class="COVone">
-    <h3>NTS Successful Failures — Volume 1</h3>
-    <a href="NTScomicPageVol1.html">
-      <img src="Assets/SFvolOneCov.png" alt="Volume 1">
-    </a>
-    <p><strong>Finished</strong> — Series status: Ongoing</p>
-    <p>Description:</p>
-    <p>Boxhead and his friends try to sign up for the renowned NTS Academy</p>
-  </div>
-
-  <!-- Volume 2 -->
-  <div class="COVtwo">
-    <h3>NTS Successful Failures — Volume 2</h3>
-    <a href="NTScomicPageVol2.html">
-      <img src="Assets/SFvolTWOcov.png" alt="Volume 2">
-    </a>
-    <p><strong>Ongoing</strong> — Series status: Ongoing</p>
-    <p>Description:</p>
-    <p>Boxhead, Nate, and Kai head to Obelisk Town with Penny and Scarlett</p>
-  </div>
-
-  <!-- Socials -->
+ <!-- Socials -->
   <div class="YT">
     <h2>YouTube</h2>
     <a href="https://www.youtube.com/@codenamespirit7772">
@@ -205,10 +227,54 @@ body{
       <img src="Assets/Cara.gif" alt="Cara" width="80">
     </a>
   </div>
+<div class="WebProfLink">
+    <h2>Other website</h2>
+    <a href="C:\Users\Ilion\Desktop\Portfolio site\index.html">
+      <img src="Assets/foxrunlink.gif" alt="Other Website" width="150">
+    </a>
+
+  </div>
+  <!-- Comics Section -->
+  <div class="ComicsSection">
+    <img src="Assets/BoxHeadComics.png" alt="Comics">
+  </div>
+  
+<!-- GALLERY SECTION -->
+<div class="GallerySection">
+  <h2 class="gallery-title">NTS comics</h2>
+
+  <div class="gallery">
+    <!-- Volume 1 -->
+    <div class="COVone">
+      <h3>NTS Successful Failures — Volume 1</h3>
+      <a href="NTScomicPageVol1.html">
+        <img src="Assets/SFvolOneCov.png" alt="Volume 1">
+      </a>
+      <p><strong>Finished</strong> — Series status: Ongoing</p>
+      <p>Boxhead and his friends try to sign up for the renowned NTS Academy</p>
+    </div>
+
+    <!-- Volume 2 -->
+    <div class="COVtwo">
+      <h3>NTS Successful Failures — Volume 2</h3>
+      <a href="NTScomicPageVol2.html">
+        <img src="Assets/SFvolTWOcov.png" alt="Volume 2">
+      </a>
+      <p><strong>Ongoing</strong> — Series status: Ongoing</p>
+      <p>Boxhead, Nate, and Kai head to Obelisk Town with Penny and Scarlett</p>
+    </div>
+  </div>
+</div>
+
+ 
+
+ 
+ 
 
 </div>
 
 </body>
+<!-- notes -->
+<!-- chainge the size of the comic covers to somthing bigger maby remove the border on them as well to see if that is afecting the size for the moble version, i also need the chaing the link to the other website once it is live and maby chaing its button but that is not nessasary i also need to find a way to merge the back ground for the comic bages and make an "other comic section" -->
 </html>
-
 
