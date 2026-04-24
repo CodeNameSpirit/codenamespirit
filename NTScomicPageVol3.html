@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NTS Comic Vol 3</title>
+
+<!-- Giscus -->
+<script src="https://giscus.app/client.js"
+  data-repo="CodeNameSpirit/CodeNameSpirit"
+  data-repo-id="R_kgDON8dGVg"
+  data-category="Announcements"
+  data-category-id="DIC_kwDON8dGVs4CnIN8"
+  data-mapping="pathname"
+  data-theme="dark"
+  crossorigin="anonymous"
+  async>
+</script>
+
+<style>
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:"Licida Sana", sans-serif;
+  background-image: url('Assets/NTS_BACKGROUND .png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ }
+
+/* GRID */
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 20px;
+}
+
+/* BANNER */
+.NTS-banner {
+  grid-column: 1 / span 3;
+  text-align: center;
+}
+
+.NTS-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* COMIC PAGES */
+.page {
+  grid-column: 1 / span 3;
+  text-align: center;
+}
+
+.page img {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+}
+
+/* NAV BUTTONS */
+.nav {
+  zoom: 25%;
+  margin: auto;
+}
+
+.top-nav {
+  grid-row: 2;
+}
+
+.bottom-nav {
+  grid-row: auto;
+}
+
+.BB { grid-column: 1; }
+.HB { grid-column: 2; }
+.NB { grid-column: 3; }
+
+/* GISCUS */
+.giscus {
+  grid-column: 1 / span 3;
+  margin-top: 50px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="grid">
+
+  <!-- Banner -->
+  <div class="NTS-banner">
+    <img src="Assets/Successful-failures_Banner.png">
+  </div>
+
+  <!-- Top Navigation -->
+  <div class="nav BB top-nav">
+    <a href="NTScomicPageVol2.html"><img src="Assets/BackButton.png"></a>
+  </div>
+  <div class="nav HB top-nav">
+    <a href="index.html"><img src="Assets/HomeButton.png"></a>
+  </div>
+  <div class="nav NB top-nav">
+    <a href="NTScomicPageVol3.html"><img src="Assets/NextButton.png"></a>
+  </div>
+
+  <!-- Comic Pages -->
+  <div class="page"><img src="SFvol3/Pg1v3.png"></div>
+  
+  <!-- Bottom Navigation -->
+  <div class="nav BB bottom-nav">
+    <a href="NTScomicPageVol2.html"><img src="Assets/BackButton.png"></a>
+  </div>
+  <div class="nav HB bottom-nav">
+    <a href="index.html"><img src="Assets/HomeButton.png"></a>
+  </div>
+  <div class="nav NB bottom-nav">
+    <a href="NTScomicPageVol3.html"><img src="Assets/NextButton.png"></a>
+  </div>
+
+  <!-- Comments -->
+  <div class="giscus"></div>
+
+</div>
+
+</body>
+</html>
+
+
