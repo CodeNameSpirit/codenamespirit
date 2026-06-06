@@ -67,12 +67,12 @@ body{
 
 /* COVERS */
 .COVone,
-.COVtwo, 
+.COVtwo,
 .COVthree {
-  grid-row: auto;
   text-align: center;
-  background: rgba(0, 128, 0, 10);
+  background: rgba(0, 128, 0, 1);
   padding: 20px;
+  width: 100%;
 }
 
 .COVone {
@@ -177,7 +177,33 @@ body{
       opacity: 0.85;
     }
 
+/* COMIC GALLERIES */
+.GalleryWrapper {
+  grid-column: 1 / span 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
+.GallerySection {
+  background: rgba(0, 128, 0, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  height: 700px;
+  overflow-y: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
 
 
 
@@ -241,55 +267,68 @@ body{
     </a>
 
   </div>
-  <!-- Comics Section -->
-  <div class="ComicsSection">
-    <img src="Assets/BoxHeadComics.png" alt="Comics">
-  </div>
-  
-<!-- GALLERY SECTION -->
-<div class="GallerySection">
-  <h2 class="gallery-title">NTS comics</h2>
+  <!-- COMIC GALLERIES -->
+<div class="GalleryWrapper">
 
-  <div class="gallery">
-    <!-- Volume 1 -->
-    <div class="COVone">
-      <h3>NTS Successful Failures — Volume 1</h3>
-      <a href="NTScomicPageVol1.html">
-        <img src="Assets/SFvolOneCov.png" alt="Volume 1">
-      </a>
-      <p><strong>Finished</strong> — Series status: Ongoing</p>
-      <p>Boxhead and his friends try to sign up for the renowned NTS Academy</p>
+  <!-- NTS COMICS -->
+  <div class="GallerySection">
+    <h2 class="gallery-title">NTS Comics</h2>
+
+    <div class="gallery">
+
+      <!-- Volume 1 -->
+      <div class="COVone">
+        <h3>NTS Successful Failures — Volume 1</h3>
+        <a href="NTScomicPageVol1.html">
+          <img src="Assets/SFvolOneCov.png" alt="Volume 1">
+        </a>
+        <p><strong>Finished</strong> — Series status: Ongoing</p>
+        <p>Boxhead and his friends try to sign up for the renowned NTS Academy</p>
+      </div>
+
+      <!-- Volume 2 -->
+      <div class="COVtwo">
+        <h3>NTS Successful Failures — Volume 2</h3>
+        <a href="NTScomicPageVol2.html">
+          <img src="Assets/SFvolTWOcov.png" alt="Volume 2">
+        </a>
+        <p><strong>Finished</strong> — Series status: Ongoing</p>
+        <p>Boxhead, Nate, and Kai head to Obelisk Town with Penny and Scarlett</p>
+      </div>
+
+      <!-- Volume 3 -->
+      <div class="COVthree">
+        <h3>NTS Successful Failures — Volume 3</h3>
+        <a href="NTScomicPageVol3.html">
+          <img src="Assets/SFvolTHREEcov.png" alt="Volume 3">
+        </a>
+        <p><strong>Unreleased</strong> — Series status: Ongoing</p>
+        <p>Paperwork, middle schoolers, and bullies</p>
+      </div>
+
     </div>
+  </div>
 
-    <!-- Volume 2 -->
-    <div class="COVtwo">
-      <h3>NTS Successful Failures — Volume 2</h3>
-      <a href="NTScomicPageVol2.html">
-        <img src="Assets/SFvolTWOcov.png" alt="Volume 2">
-      </a>
-      <p><strong>Finished</strong> — Series status: Ongoing</p>
-      <p>Boxhead, Nate, and Kai head to Obelisk Town with Penny and Scarlett</p>
-    </div>
- 
-  <!-- Volume 3 -->
-    <div class="COVthree">
-      <h3>NTS Successful Failures — Volume 3</h3>
-      <a href="NTScomicPageVol3.html">
-        <img src="Assets/SFvolTHREEcov.png" alt="Volume 3">
-      </a>
-      <p><strong>unreleased</strong> — Series status: Ongoing</p>
-      <p>paperwork, middle schoolers, and bullies</p>
+  <!-- OTHER COMICS -->
+  <div class="GallerySection">
+    <h2 class="gallery-title">Other Comics</h2>
+
+    <div class="gallery">
+
+      <!-- Add your other comics here -->
+
+      <div class="COVone">
+        <h3>Comic Title</h3>
+        <a href="#">
+          <img src="Assets/placeholder.png" alt="Comic">
+        </a>
+        <p>Status</p>
+        <p>Description</p>
+      </div>
+
     </div>
   </div>
-</div>
 
- <!-- GALLERY SECTION  2-->
-<div class="GallerySection">
-  <h2 class="gallery-title">other comics</h2>
-
-  <div class="gallery">
-    
-  </div>
 </div>
 
  
