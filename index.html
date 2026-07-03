@@ -179,20 +179,24 @@ body{
 
 /* COMIC GALLERIES */
 .GalleryWrapper {
+  grid-column: 1 / span 4;   /* Make the wrapper span the whole grid */
   display: flex;
-  gap: 20px; 
+  flex-direction: row;        /* Side by side */
+  gap: 20px;
   width: 100%;
+  align-items: flex-start;
 }
 
 .GallerySection {
-  flex: 1;
+  flex: 1;                    /* Each box takes half the width */
   background: rgba(0, 128, 0, 0.8);
   padding: 15px;
   border-radius: 10px;
   height: 700px;
   overflow-y: auto;
+  min-width: 0;
 }
-
+	
 .gallery {
   display: flex;
   flex-direction: column;
