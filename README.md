@@ -3,6 +3,8 @@ heyy humans!!!
 this is the first site that I've coded my self 
 so it's a bit buggy:,) on phones it works best on 
 desktop mode and on desktop ot should work just fine
+
+also check it out it contains my webcomics and links to other stuff I've done
 thank you!!!
 
 <!--
