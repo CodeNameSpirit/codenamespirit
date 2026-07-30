@@ -68,7 +68,8 @@ body{
 /* COVERS */
 .COVone,
 .COVtwo,
-.COVthree {
+.COVthree,
+.SrtCOVone,{
   text-align: center;
   background: rgba(0, 128, 0, 1);
   padding: 20px;
@@ -85,10 +86,15 @@ body{
 .COVthree {
   grid-column: 1 / span 2;
 }
+	.SrtCOVone {
+  
+	}
 .COVone img,
 .COVtwo img,
-.COVthree img{
+.COVthree img,
+ SrtCOVone img,{
   width: 60%;
+	
 }
 
 /* COUNTER */
@@ -179,9 +185,9 @@ body{
 
 /* COMIC GALLERIES */
 .GalleryWrapper {
-  grid-column: 1 / span 4;   /* Make the wrapper span the whole grid */
+  grid-column: 1 / span 4;   
   display: flex;
-  flex-direction: row;        /* Side by side */
+  flex-direction: row;        
   gap: 20px;
   width: 100%;
   align-items: flex-start;
@@ -323,10 +329,8 @@ body{
     <h2 class="gallery-title">Other Comics</h2>
 
     <div class="gallery">
-
-      <!-- Add your other comics here -->
-
-      <div class="COVone">
+     <!--short comic1-->
+      <div class="SrtCOVone">
         <h3>Shorts#1 wont back down</h3>
         <a href="Shorts#1.html">
           <img src="Assets/Shorts#1pg1.png" alt="Shorts 1">
@@ -347,7 +351,7 @@ body{
 
 </body>
 <!-- notes -->
-<!-- make an "other comic section" -->
+<!-- fix the Shorts comic link and cover-->
 </html>
 
 
